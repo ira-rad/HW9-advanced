@@ -1,3 +1,4 @@
+const buttonChange = document.getElementById("changeBtn");
 function generateBlocks() {
   document.getElementById("container").style.display = "flex";
   let color = document.querySelectorAll(".square");
@@ -9,7 +10,13 @@ function generateBlocks() {
 function getGenerateSquareColor() {
   return "#" + Math.floor(Math.random() * 16777215).toString(16);
 }
-
-function getInterval() {
-  setInterval(() => generateBlocks(), 1000);
-}
+buttonChange.addEventListener(
+  "click",
+  function () {
+    setInterval(() => generateBlocks(), 1000);
+  },
+  { once: true }
+);
+// function getInterval() {
+//   setInterval(() => generateBlocks(), 1000);
+// }
