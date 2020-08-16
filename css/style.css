@@ -20,11 +20,16 @@ html {
   height: 40px;
   cursor: pointer;
   border: none;
+  padding: 2px;
+  width: 100px;
+  
 }
 .btn:hover {
   background-color: rgba(279, 194, 252, 22);
   color: rgb(75, 67, 67);
   border: 2px solid rgb(75, 67, 67);
+ 
+  padding: 0;
 }
 .btn:active {
   background-color: rgba(279, 214, 253, 22);
